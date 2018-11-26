@@ -1,0 +1,298 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< org.openmrs.web:openmrs-webapp >-------------------
+[INFO] Building openmrs-webapp 2.1.4-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] >>> jetty-maven-plugin:9.3.3.v20150827:run (default-cli) > test-compile @ openmrs-webapp >>>
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ openmrs-webapp ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] ShortRevision tag detected. The value is '6'.
+[INFO] Executing: /bin/sh -c cd /Users/zpolic/0_GitHub/openmrs-core/webapp && git rev-parse --verify --short=6 HEAD
+[INFO] Working directory: /Users/zpolic/0_GitHub/openmrs-core/webapp
+[INFO] Storing buildNumber: 232ecb at timestamp: 1543251345087
+[INFO] ShortRevision tag detected. The value is '6'.
+[INFO] Executing: /bin/sh -c cd /Users/zpolic/0_GitHub/openmrs-core/webapp && git rev-parse --verify --short=6 HEAD
+[INFO] Working directory: /Users/zpolic/0_GitHub/openmrs-core/webapp
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ openmrs-webapp ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4:resources (default-resources) @ openmrs-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 1 resource to ../jetty
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.4:run (default) @ openmrs-webapp ---
+project.artifactId
+[INFO] Executing tasks
+    [unzip] Expanding: /Users/zpolic/0_GitHub/openmrs-core/webapp/src/main/resources/liquibase-demo-data.zip into /Users/zpolic/0_GitHub/openmrs-core/webapp/target/classes
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.1:compile (default-compile) @ openmrs-webapp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4:testResources (default-testResources) @ openmrs-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.1:testCompile (default-testCompile) @ openmrs-webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< jetty-maven-plugin:9.3.3.v20150827:run (default-cli) < test-compile @ openmrs-webapp <<<
+[INFO] 
+[INFO] 
+[INFO] --- jetty-maven-plugin:9.3.3.v20150827:run (default-cli) @ openmrs-webapp ---
+[INFO] Logging initialized @2678ms
+[INFO] Configuring Jetty for project: openmrs-webapp
+[INFO] webAppSourceDirectory not set. Trying src/main/webapp
+[INFO] Reload Mechanic: automatic
+[INFO] Classes = /Users/zpolic/0_GitHub/openmrs-core/webapp/target/classes
+[INFO] Context path = /openmrs
+[INFO] Tmp directory = /Users/zpolic/0_GitHub/openmrs-core/webapp/target/tmp
+[INFO] Web defaults = org/eclipse/jetty/webapp/webdefault.xml
+[INFO] Web overrides = src/test/resources/override-web.xml
+[INFO] web.xml file = /Users/zpolic/0_GitHub/openmrs-core/webapp/target/jetty/WEB-INF/web.xml
+[INFO] Webapp directory = /Users/zpolic/0_GitHub/openmrs-core/webapp/src/main/webapp
+[INFO] jetty-9.3.3.v20150827
+[INFO] No Spring WebApplicationInitializer types detected on classpath
+[INFO] Initializing log4j from [classpath:log4j.xml]
+WARN - OpenmrsUtil.getRuntimePropertiesFilePathName(2085) |2018-11-26 11:55:49,132| Unable to find a runtime properties file at /Users/zpolic/0_GitHub/openmrs-core/webapp/openmrs-runtime.properties
+WARN - OpenmrsUtil.getRuntimePropertiesFilePathName(2085) |2018-11-26 11:55:49,143| Unable to find a runtime properties file at /Users/zpolic/0_GitHub/openmrs-core/webapp/openmrs-runtime.properties
+INFO - Listener.contextInitialized(174) |2018-11-26 11:55:49,143| Using runtime properties file: /Users/zpolic/.OpenMRS/openmrs-runtime.properties
+INFO - EhCacheManagerFactoryBean.afterPropertiesSet(129) |2018-11-26 11:55:52,192| Initializing EhCache CacheManager
+WARN - SimpleUrlHandlerMapping.registerHandlers(115) |2018-11-26 11:55:56,610| Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+WARN - Listener.loadBundledModules(521) |2018-11-26 11:55:56,619| Bundled module folder doesn't exist: /Users/zpolic/0_GitHub/openmrs-core/webapp/src/main/webapp/WEB-INF/bundledModules
+WARN - OpenmrsUtil.getRuntimePropertiesFilePathName(2085) |2018-11-26 11:55:56,620| Unable to find a runtime properties file at /Users/zpolic/0_GitHub/openmrs-core/webapp/openmrs-runtime.properties
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:55:59,295| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: event.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:55:59,319| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:55:59,331| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: event.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:55:59,341| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:55:59,422| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:55:59,430| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:55:59,442| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:55:59,452| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:06,132| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: oauth2.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:06,151| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:06,162| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: oauth2.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:06,171| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:11,719| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:11,724| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:11,734| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:11,743| Exiting method saveGlobalProperty
+WARN - Module.expandExtensionNames(575) |2018-11-26 11:56:11,831| smartcontainer: Unable to find class definition for extension: org.openmrs.patientDashboardTab
+java.lang.NoClassDefFoundError: org/openmrs/module/web/extension/PatientDashboardTabExt
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at org.openmrs.module.ModuleClassLoader.loadClass(ModuleClassLoader.java:645)
+	at org.openmrs.module.ModuleClassLoader.loadClass(ModuleClassLoader.java:564)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.openmrs.module.Module.expandExtensionNames(Module.java:567)
+	at org.openmrs.module.Module.getExtensions(Module.java:494)
+	at org.openmrs.module.ModuleFactory.startModuleInternal(ModuleFactory.java:704)
+	at org.openmrs.api.context.Daemon$1.run(Daemon.java:74)
+Caused by: java.lang.ClassNotFoundException: org.openmrs.module.web.extension.PatientDashboardTabExt
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:50)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass(ClassRealm.java:271)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:247)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:239)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:470)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:421)
+	at org.openmrs.module.ModuleClassLoader.loadClass(ModuleClassLoader.java:571)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 16 more
+WARN - Module.expandExtensionNames(575) |2018-11-26 11:56:11,833| smartcontainer: Unable to find class definition for extension: org.openmrs.admin.list
+java.lang.NoClassDefFoundError: org/openmrs/module/web/extension/AdministrationSectionExt
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at org.openmrs.module.ModuleClassLoader.loadClass(ModuleClassLoader.java:645)
+	at org.openmrs.module.ModuleClassLoader.loadClass(ModuleClassLoader.java:564)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.openmrs.module.Module.expandExtensionNames(Module.java:567)
+	at org.openmrs.module.Module.getExtensions(Module.java:494)
+	at org.openmrs.module.ModuleFactory.startModuleInternal(ModuleFactory.java:704)
+	at org.openmrs.api.context.Daemon$1.run(Daemon.java:74)
+Caused by: java.lang.ClassNotFoundException: org.openmrs.module.web.extension.AdministrationSectionExt
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:50)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass(ClassRealm.java:271)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:247)
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:239)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:470)
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:421)
+	at org.openmrs.module.ModuleClassLoader.loadClass(ModuleClassLoader.java:571)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 16 more
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:17,021| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: smartcontainer.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:17,026| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:17,034| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: smartcontainer.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:17,040| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:17,121| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: dataexchange.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:17,126| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:17,134| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: dataexchange.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:17,139| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:17,177| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:17,183| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:17,194| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:17,200| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:17,380| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:17,387| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:17,401| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:17,408| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:17,500| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:17,508| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:17,520| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:17,527| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:22,765| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:22,771| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:22,783| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:22,792| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:28,095| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:28,101| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:28,112| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:28,120| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:33,302| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: atlas.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:33,308| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:33,318| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: atlas.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:33,325| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:38,577| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uilibrary.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:38,583| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:38,592| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uilibrary.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:38,599| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:43,789| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: providermanagement.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:43,793| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:43,801| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: providermanagement.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:43,807| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:44,056| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:44,063| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:44,077| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:44,085| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:44,175| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:44,182| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:44,193| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:44,200| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:44,243| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:44,251| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:44,270| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:44,279| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:49,617| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:49,622| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:49,631| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:49,635| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:54,879| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:54,886| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:56:54,901| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:56:54,908| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:00,148| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatadeploy.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:00,153| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:00,162| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatadeploy.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:00,167| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:05,406| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:05,412| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:05,423| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:05,429| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:10,685| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:10,692| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:10,702| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:10,707| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:16,294| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:16,300| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:16,311| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:16,319| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:21,591| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: emrapi.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:21,597| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:21,606| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: emrapi.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:21,612| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:26,884| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appointmentscheduling.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:26,889| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:26,901| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appointmentscheduling.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:26,907| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:32,167| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:32,171| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:32,179| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:32,184| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:37,404| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: idgen.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:37,410| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:37,421| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: idgen.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:37,427| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:42,684| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencemetadata.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:42,689| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:42,697| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencemetadata.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:42,702| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:47,892| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencedemodata.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:47,897| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:47,907| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencedemodata.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:47,913| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:53,111| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:53,116| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:53,124| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:53,128| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:58,372| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:58,377| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:57:58,386| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:57:58,392| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:03,579| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: formentryapp.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:03,583| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:03,591| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: formentryapp.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:03,596| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:08,793| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: allergyui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:08,797| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:08,805| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: allergyui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:08,809| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:13,999| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:14,004| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:14,012| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:14,017| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:19,205| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: adminui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:19,210| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:19,217| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: adminui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:19,222| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:24,500| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: coreapps.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:24,505| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:24,515| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: coreapps.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:24,521| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:29,751| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationapp.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:29,755| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:29,764| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationapp.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:29,768| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:35,003| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:35,008| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:35,016| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:35,020| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:40,236| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appointmentschedulingui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:40,240| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:40,248| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appointmentschedulingui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:40,253| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:45,500| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentryui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:45,504| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:45,511| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentryui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:45,516| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:51,179| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: chartsearch.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:51,185| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:51,194| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: chartsearch.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:51,200| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:56,498| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referenceapplication.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:56,503| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:56,512| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referenceapplication.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:56,517| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:58:58,146| In method SchedulerService.saveToMemento. Arguments: 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:58:58,155| Exiting method saveToMemento
+INFO - EhCacheManagerFactoryBean.destroy(181) |2018-11-26 11:58:58,188| Shutting down EhCache CacheManager
+INFO - ServiceContext.startRefreshingContext(808) |2018-11-26 11:58:58,189| Refreshing Context
+WARN - SpringSecurityCoreVersion.performVersionChecks(62) |2018-11-26 11:59:03,294| **** You are advised to use Spring 4.2.5.RELEASE or later with this version. You are running: 4.1.4.RELEASE
+INFO - EhCacheManagerFactoryBean.afterPropertiesSet(129) |2018-11-26 11:59:09,016| Initializing EhCache CacheManager

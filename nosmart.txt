@@ -1,0 +1,1462 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< org.openmrs.web:openmrs-webapp >-------------------
+[INFO] Building openmrs-webapp 2.1.4-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] >>> jetty-maven-plugin:9.3.3.v20150827:run (default-cli) > test-compile @ openmrs-webapp >>>
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.1:create (default) @ openmrs-webapp ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] ShortRevision tag detected. The value is '6'.
+[INFO] Executing: /bin/sh -c cd /Users/zpolic/0_GitHub/openmrs-core/webapp && git rev-parse --verify --short=6 HEAD
+[INFO] Working directory: /Users/zpolic/0_GitHub/openmrs-core/webapp
+[INFO] Storing buildNumber: 232ecb at timestamp: 1543249771260
+[INFO] ShortRevision tag detected. The value is '6'.
+[INFO] Executing: /bin/sh -c cd /Users/zpolic/0_GitHub/openmrs-core/webapp && git rev-parse --verify --short=6 HEAD
+[INFO] Working directory: /Users/zpolic/0_GitHub/openmrs-core/webapp
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.5:parse-version (parse-version) @ openmrs-webapp ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4:resources (default-resources) @ openmrs-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 1 resource to ../jetty
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.4:run (default) @ openmrs-webapp ---
+project.artifactId
+[INFO] Executing tasks
+    [unzip] Expanding: /Users/zpolic/0_GitHub/openmrs-core/webapp/src/main/resources/liquibase-demo-data.zip into /Users/zpolic/0_GitHub/openmrs-core/webapp/target/classes
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.1:compile (default-compile) @ openmrs-webapp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4:testResources (default-testResources) @ openmrs-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.1:testCompile (default-testCompile) @ openmrs-webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< jetty-maven-plugin:9.3.3.v20150827:run (default-cli) < test-compile @ openmrs-webapp <<<
+[INFO] 
+[INFO] 
+[INFO] --- jetty-maven-plugin:9.3.3.v20150827:run (default-cli) @ openmrs-webapp ---
+[INFO] Logging initialized @2851ms
+[INFO] Configuring Jetty for project: openmrs-webapp
+[INFO] webAppSourceDirectory not set. Trying src/main/webapp
+[INFO] Reload Mechanic: automatic
+[INFO] Classes = /Users/zpolic/0_GitHub/openmrs-core/webapp/target/classes
+[INFO] Context path = /openmrs
+[INFO] Tmp directory = /Users/zpolic/0_GitHub/openmrs-core/webapp/target/tmp
+[INFO] Web defaults = org/eclipse/jetty/webapp/webdefault.xml
+[INFO] Web overrides = src/test/resources/override-web.xml
+[INFO] web.xml file = /Users/zpolic/0_GitHub/openmrs-core/webapp/target/jetty/WEB-INF/web.xml
+[INFO] Webapp directory = /Users/zpolic/0_GitHub/openmrs-core/webapp/src/main/webapp
+[INFO] jetty-9.3.3.v20150827
+[INFO] No Spring WebApplicationInitializer types detected on classpath
+[INFO] Initializing log4j from [classpath:log4j.xml]
+WARN - OpenmrsUtil.getRuntimePropertiesFilePathName(2085) |2018-11-26 11:29:35,361| Unable to find a runtime properties file at /Users/zpolic/0_GitHub/openmrs-core/webapp/openmrs-runtime.properties
+WARN - OpenmrsUtil.getRuntimePropertiesFilePathName(2085) |2018-11-26 11:29:35,372| Unable to find a runtime properties file at /Users/zpolic/0_GitHub/openmrs-core/webapp/openmrs-runtime.properties
+INFO - Listener.contextInitialized(174) |2018-11-26 11:29:35,372| Using runtime properties file: /Users/zpolic/.OpenMRS/openmrs-runtime.properties
+INFO - EhCacheManagerFactoryBean.afterPropertiesSet(129) |2018-11-26 11:29:38,165| Initializing EhCache CacheManager
+WARN - SimpleUrlHandlerMapping.registerHandlers(115) |2018-11-26 11:29:41,959| Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+WARN - Listener.loadBundledModules(521) |2018-11-26 11:29:41,969| Bundled module folder doesn't exist: /Users/zpolic/0_GitHub/openmrs-core/webapp/src/main/webapp/WEB-INF/bundledModules
+WARN - OpenmrsUtil.getRuntimePropertiesFilePathName(2085) |2018-11-26 11:29:41,971| Unable to find a runtime properties file at /Users/zpolic/0_GitHub/openmrs-core/webapp/openmrs-runtime.properties
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:43,619| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: layout.address.format value: <org.openmrs.layout.address.AddressTemplate>
+     <nameMappings class="properties">
+       <property name="postalCode" value="Location.postalCode"/>
+       <property name="address2" value="Location.address2"/>
+       <property name="address1" value="Location.address1"/>
+       <property name="country" value="Location.country"/>
+       <property name="stateProvince" value="Location.stateProvince"/>
+       <property name="cityVillage" value="Location.cityVillage"/>
+     </nameMappings>
+     <sizeMappings class="properties">
+       <property name="postalCode" value="10"/>
+       <property name="address2" value="40"/>
+       <property name="address1" value="40"/>
+       <property name="country" value="10"/>
+       <property name="stateProvince" value="10"/>
+       <property name="cityVillage" value="10"/>
+     </sizeMappings>
+     <lineByLineFormat>
+       <string>address1</string>
+       <string>address2</string>
+       <string>cityVillage stateProvince country postalCode</string>
+     </lineByLineFormat>
+   </org.openmrs.layout.address.AddressTemplate>, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:43,696| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:44,633| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: event.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:44,639| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:44,650| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: event.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:44,656| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:44,731| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:44,739| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:44,754| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: legacyui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:44,762| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:50,346| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:50,353| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:50,364| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: fhir.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:50,369| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:50,481| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: dataexchange.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:50,491| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:50,505| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: dataexchange.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:50,511| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:50,553| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:50,560| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:50,573| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingcompatibility.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:50,580| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:50,784| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:50,791| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:50,803| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: webservices.rest.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:50,810| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:50,916| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:50,923| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:50,936| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: serialization.xstream.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:50,944| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:56,186| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:56,192| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:29:56,202| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uiframework.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:29:56,209| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:01,498| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:01,504| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:01,513| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uicommons.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:01,518| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:06,697| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: atlas.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:06,701| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:06,710| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: atlas.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:06,715| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:11,956| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uilibrary.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:11,961| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:11,970| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: uilibrary.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:11,974| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:17,197| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: providermanagement.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:17,202| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:17,210| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: providermanagement.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:17,215| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:17,296| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:17,303| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:17,314| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlwidgets.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:17,320| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:17,507| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:17,513| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:17,522| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: addresshierarchy.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:17,527| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:17,619| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:17,625| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:17,634| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:17,640| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:17,676| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.appFolderPath value: /usr/local/tomcat/.OpenMRS/owa, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:17,690| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:22,977| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:22,984| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:22,997| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatamapping.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:23,003| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:28,326| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:28,333| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:28,346| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatasharing.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:28,353| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:33,648| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatadeploy.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:33,654| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:33,664| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: metadatadeploy.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:33,670| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:38,898| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:38,903| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:38,911| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentry.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:38,917| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:44,132| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:44,137| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:44,146| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: calculation.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:44,151| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:49,674| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:49,679| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:49,690| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reporting.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:49,695| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:54,939| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: emrapi.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:54,943| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:30:54,951| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: emrapi.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:30:54,956| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:00,214| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appointmentscheduling.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:00,219| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:00,230| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appointmentscheduling.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:00,235| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:05,487| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:05,492| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:05,501| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingrest.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:05,507| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:10,731| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: idgen.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:10,735| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:10,744| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: idgen.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:10,748| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:15,986| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencemetadata.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:15,993| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:16,005| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencemetadata.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:16,012| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:21,213| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencedemodata.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:21,219| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:21,230| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencedemodata.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:21,235| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:26,448| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:26,454| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:26,465| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:26,471| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:26,504| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.patientNameSearch value: registrationcore.BasicPatientNameSearch, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:26,518| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:31,756| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:31,760| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:31,767| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appframework.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:31,771| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:36,960| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: formentryapp.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:36,965| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:36,976| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: formentryapp.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:36,982| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:42,195| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: allergyui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:42,201| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:42,211| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: allergyui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:42,216| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:47,397| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:47,402| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:47,410| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:47,415| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:52,591| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: adminui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:52,596| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:52,604| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: adminui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:52,608| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:57,844| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: coreapps.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:57,849| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:31:57,856| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: coreapps.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:31:57,861| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:32:03,126| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationapp.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:32:03,130| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:32:03,137| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationapp.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:32:03,142| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:32:08,401| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:32:08,406| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:32:08,417| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: reportingui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:32:08,424| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:32:13,618| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appointmentschedulingui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:32:13,622| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:32:13,630| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: appointmentschedulingui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:32:13,635| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:32:18,869| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentryui.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:32:18,874| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:32:18,882| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: htmlformentryui.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:32:18,886| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:32:24,546| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: chartsearch.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:32:24,551| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:32:24,560| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: chartsearch.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:32:24,564| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:32:29,844| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referenceapplication.started value: true, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:32:29,850| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:32:29,859| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referenceapplication.mandatory value: false, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:32:29,864| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:32:31,538| In method SchedulerService.saveToMemento. Arguments: 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:32:31,546| Exiting method saveToMemento
+INFO - EhCacheManagerFactoryBean.destroy(181) |2018-11-26 11:32:31,577| Shutting down EhCache CacheManager
+INFO - ServiceContext.startRefreshingContext(808) |2018-11-26 11:32:31,578| Refreshing Context
+INFO - EhCacheManagerFactoryBean.afterPropertiesSet(129) |2018-11-26 11:32:42,321| Initializing EhCache CacheManager
+WARN - SimpleUrlHandlerMapping.registerHandlers(115) |2018-11-26 11:33:00,447| Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+WARN - IdgenTask.run(32) |2018-11-26 11:33:00,539| Not running scheduled task. DaemonToken = null; enabled = false
+WARN - SimpleUrlHandlerMapping.registerHandlers(115) |2018-11-26 11:33:03,089| Neither 'urlMap' nor 'mappings' set on SimpleUrlHandlerMapping
+INFO - ServiceContext.doneRefreshingContext(819) |2018-11-26 11:33:03,100| Done refreshing Context
+WARN - AddressConfigurationLoader.loadAddressConfiguration(64) |2018-11-26 11:33:09,650| Address hierarchy configuration file appears invalid, skipping the loading process: addressConfiguration.xml
+ERROR - OwaActivator.contextRefreshed(105) |2018-11-26 11:33:09,721| java.io.IOException: Destination '/usr/local/tomcat/.OpenMRS/owa/metadatamapping.owa' directory cannot be created
+ERROR - DefaultAppManager.setAppFolderPath(232) |2018-11-26 11:33:09,728| Unable to create directory /usr/local/tomcat/.OpenMRS/owa
+java.io.IOException: Unable to create directory /usr/local/tomcat/.OpenMRS/owa
+	at org.apache.commons.io.FileUtils.forceMkdir(FileUtils.java:1488)
+	at org.openmrs.module.owa.impl.DefaultAppManager.setAppFolderPath(DefaultAppManager.java:228)
+	at org.openmrs.module.owa.impl.DefaultAppManager.getAppFolderPath(DefaultAppManager.java:216)
+	at org.openmrs.module.owa.impl.DefaultAppManager.reloadApps(DefaultAppManager.java:271)
+	at org.openmrs.module.owa.activator.OwaActivator.contextRefreshed(OwaActivator.java:113)
+	at org.openmrs.module.ModuleUtil.refreshApplicationContext(ModuleUtil.java:929)
+	at org.openmrs.module.web.WebModuleUtil.refreshWAC(WebModuleUtil.java:866)
+	at org.openmrs.web.Listener.performWebStartOfModules(Listener.java:656)
+	at org.openmrs.web.Listener.performWebStartOfModules(Listener.java:635)
+	at org.openmrs.web.Listener.startOpenmrs(Listener.java:266)
+	at org.openmrs.web.WebDaemon$1.run(WebDaemon.java:42)
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:09,737| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.appFolderPath value: /usr/local/tomcat/.OpenMRS/owa, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:09,749| Exiting method saveGlobalProperty
+ERROR - DefaultAppManager.setAppFolderPath(232) |2018-11-26 11:33:09,757| Unable to create directory /usr/local/tomcat/.OpenMRS/owa
+java.io.IOException: Unable to create directory /usr/local/tomcat/.OpenMRS/owa
+	at org.apache.commons.io.FileUtils.forceMkdir(FileUtils.java:1488)
+	at org.openmrs.module.owa.impl.DefaultAppManager.setAppFolderPath(DefaultAppManager.java:228)
+	at org.openmrs.module.owa.impl.DefaultAppManager.getAppFolderPath(DefaultAppManager.java:216)
+	at org.openmrs.module.owa.impl.DefaultAppManager.reloadApps(DefaultAppManager.java:272)
+	at org.openmrs.module.owa.activator.OwaActivator.contextRefreshed(OwaActivator.java:113)
+	at org.openmrs.module.ModuleUtil.refreshApplicationContext(ModuleUtil.java:929)
+	at org.openmrs.module.web.WebModuleUtil.refreshWAC(WebModuleUtil.java:866)
+	at org.openmrs.web.Listener.performWebStartOfModules(Listener.java:656)
+	at org.openmrs.web.Listener.performWebStartOfModules(Listener.java:635)
+	at org.openmrs.web.Listener.startOpenmrs(Listener.java:266)
+	at org.openmrs.web.WebDaemon$1.run(WebDaemon.java:42)
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:09,762| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: owa.appFolderPath value: /usr/local/tomcat/.OpenMRS/owa, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:09,768| Exiting method saveGlobalProperty
+ERROR - DefaultAppManager.reloadApps(293) |2018-11-26 11:33:09,769| appFolder settings is not a directory
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:09,936| In method UserService.saveRole. Arguments: Role=Privilege Level: Full, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:09,941| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:09,961| In method UserService.saveRole. Arguments: Role=Privilege Level: High, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:09,965| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,075| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: visits.assignmentHandler value: org.openmrs.module.emrapi.adt.EmrApiVisitAssignmentHandler, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,078| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,139| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: referencemetadata.installedVersion value: 14, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,146| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,154| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.systemAdministration, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,155| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,158| In method UserService.savePrivilege. Arguments: Privilege=App: referenceapplication.legacyAdmin, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,158| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,160| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.activeVisits, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,161| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,163| In method UserService.savePrivilege. Arguments: Privilege=App: atlas.manage, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,163| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,166| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.configuremetadata, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,166| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,168| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.findPatient, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,169| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,171| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.patientDashboard, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,171| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,174| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.patientVisits, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,174| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,177| In method UserService.savePrivilege. Arguments: Privilege=App: coreapps.systemAdministration, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,177| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,180| In method UserService.savePrivilege. Arguments: Privilege=App: formentryapp.forms, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,180| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,183| In method UserService.savePrivilege. Arguments: Privilege=App: referenceapplication.vitals, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,183| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,185| In method UserService.savePrivilege. Arguments: Privilege=App: registrationapp.registerPatient, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,186| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,188| In method UserService.savePrivilege. Arguments: Privilege=Task: coreapps.createRetrospectiveVisit, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,189| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,191| In method UserService.savePrivilege. Arguments: Privilege=Task: coreapps.createVisit, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,191| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,194| In method UserService.savePrivilege. Arguments: Privilege=Task: coreapps.endVisit, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,194| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,196| In method UserService.savePrivilege. Arguments: Privilege=Task: coreapps.mergeVisits, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,197| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,199| In method UserService.savePrivilege. Arguments: Privilege=Task: referenceapplication.simpleAdmission, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,199| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,202| In method UserService.savePrivilege. Arguments: Privilege=Task: referenceapplication.simpleDischarge, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,202| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,204| In method UserService.savePrivilege. Arguments: Privilege=Task: referenceapplication.simpleTransfer, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,204| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,207| In method UserService.savePrivilege. Arguments: Privilege=Task: referenceapplication.simpleVisitNote, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,207| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,209| In method UserService.savePrivilege. Arguments: Privilege=Task: referenceapplication.vitals, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,209| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,212| In method UserService.savePrivilege. Arguments: Privilege=Task: Modify Allergies, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,212| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,214| In method UserService.savePrivilege. Arguments: Privilege=Task: emr.patient.encounter.delete, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,214| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,216| In method UserService.savePrivilege. Arguments: Privilege=Task: emr.patient.encounter.edit, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,217| Exiting method savePrivilege
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,237| In method UserService.saveRole. Arguments: Role=Application: Administers System, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,237| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,250| In method UserService.saveRole. Arguments: Role=Application: Configures Metadata, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,250| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,266| In method UserService.saveRole. Arguments: Role=Application: Configures Forms, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,266| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,281| In method UserService.saveRole. Arguments: Role=Application: Manages Atlas, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,282| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,298| In method UserService.saveRole. Arguments: Role=Application: Registers Patients, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,298| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,313| In method UserService.saveRole. Arguments: Role=Application: Enters Vitals, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,314| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,327| In method UserService.saveRole. Arguments: Role=Application: Uses Capture Vitals App, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,327| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,344| In method UserService.saveRole. Arguments: Role=Application: Uses Patient Summary, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,344| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,358| In method UserService.saveRole. Arguments: Role=Application: Writes Clinical Notes, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,358| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,380| In method UserService.saveRole. Arguments: Role=Application: Enters ADT Events, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,380| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,392| In method UserService.saveRole. Arguments: Role=Application: Records Allergies, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,392| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,396| In method UserService.saveRole. Arguments: Role=Application: Has Super User Privileges, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,396| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,408| In method UserService.saveRole. Arguments: Role=Application: Sees Appointment Schedule, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,409| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,414| In method UserService.saveRole. Arguments: Role=Application: Edits Existing Encounters, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,414| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,424| In method UserService.saveRole. Arguments: Role=Application: Requests Appointments, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,425| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,439| In method UserService.saveRole. Arguments: Role=Application: Schedules Appointments, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,439| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,452| In method UserService.saveRole. Arguments: Role=Application: Schedules And Overbooks Appointments, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,452| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,465| In method UserService.saveRole. Arguments: Role=Application: Manages Provider Schedules, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,465| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,474| In method UserService.saveRole. Arguments: Role=Application: Configures Appointment Scheduling, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,475| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,495| In method UserService.saveRole. Arguments: Role=Organizational: Doctor, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,495| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,509| In method UserService.saveRole. Arguments: Role=Organizational: Nurse, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,509| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,516| In method UserService.saveRole. Arguments: Role=Organizational: Registration Clerk, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,516| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,530| In method UserService.saveRole. Arguments: Role=Organizational: System Administrator, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,531| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,541| In method UserService.saveRole. Arguments: Role=Organizational: Hospital Administrator, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,541| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,620| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=One time, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,627| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,641| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every 30 min, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,649| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,661| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every hour, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,669| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,687| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every two hours, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,694| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,709| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every three hours, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,715| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,734| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every four hours, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,740| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,753| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every five hours, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,759| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,771| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every six hours, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,778| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,792| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every eight hours, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,797| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,809| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every twelve hours, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,814| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,832| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Twice daily, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,838| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,852| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Twice daily before meals, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,858| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,874| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Twice daily after meals, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,882| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,899| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Twice daily with meals, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,914| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,929| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every twenty-four hours, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,936| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,958| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Once daily, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,966| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:10,983| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Once daily, at bedtime, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:10,990| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,004| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Once daily, in the evening, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,011| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,029| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Once daily, in the morning, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,037| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,053| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Thrice daily, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,061| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,082| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Thrice daily, after meals, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,088| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,103| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Thrice daily, before meals, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,111| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,125| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Thrice daily, with meals, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,132| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,146| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Four times daily, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,153| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,167| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Four times daily, after meals and at bedtime, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,173| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,189| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Four times daily, before meals and at bedtime, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,197| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,211| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every forty-eight hours, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,218| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,233| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every thirty-six hours, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,241| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,255| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every seventy-two hours, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,263| Exiting method saveOrderFrequency
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,278| In method OrderService.saveOrderFrequency. Arguments: OrderFrequency=Every Monday, Wednesday and Friday, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,286| Exiting method saveOrderFrequency
+INFO - SerializationServiceImpl.getDefaultSerializer(71) |2018-11-26 11:33:11,320| No default serializer specified - using builtin SimpleXStreamSerializer.
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,862| In method UserService.saveRole. Arguments: Role=Application: Administers System, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,884| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,896| In method UserService.saveRole. Arguments: Role=Application: Configures Appointment Scheduling, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,907| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,919| In method UserService.saveRole. Arguments: Role=Application: Configures Forms, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,933| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,944| In method UserService.saveRole. Arguments: Role=Application: Configures Metadata, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,955| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,966| In method UserService.saveRole. Arguments: Role=Application: Edits Existing Encounters, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,978| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:11,989| In method UserService.saveRole. Arguments: Role=Application: Enters ADT Events, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:11,999| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,012| In method UserService.saveRole. Arguments: Role=Application: Enters Vitals, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,024| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,036| In method UserService.saveRole. Arguments: Role=Application: Has Super User Privileges, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,048| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,060| In method UserService.saveRole. Arguments: Role=Application: Manages Atlas, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,070| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,082| In method UserService.saveRole. Arguments: Role=Application: Manages Provider Schedules, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,094| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,105| In method UserService.saveRole. Arguments: Role=Application: Records Allergies, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,114| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,124| In method UserService.saveRole. Arguments: Role=Application: Registers Patients, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,133| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,142| In method UserService.saveRole. Arguments: Role=Application: Requests Appointments, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,151| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,160| In method UserService.saveRole. Arguments: Role=Application: Schedules And Overbooks Appointments, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,169| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,181| In method UserService.saveRole. Arguments: Role=Application: Schedules Appointments, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,190| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,199| In method UserService.saveRole. Arguments: Role=Application: Sees Appointment Schedule, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,207| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,217| In method UserService.saveRole. Arguments: Role=Application: Uses Capture Vitals App, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,227| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,239| In method UserService.saveRole. Arguments: Role=Application: Uses Patient Summary, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,251| Exiting method saveRole
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,262| In method UserService.saveRole. Arguments: Role=Application: Writes Clinical Notes, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,272| Exiting method saveRole
+INFO - SerializationServiceImpl.getDefaultSerializer(71) |2018-11-26 11:33:12,355| No default serializer specified - using builtin SimpleXStreamSerializer.
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,403| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: layout.address.format value: <org.openmrs.layout.address.AddressTemplate>
+     <nameMappings class="properties">
+       <property name="postalCode" value="Location.postalCode"/>
+       <property name="address2" value="Location.address2"/>
+       <property name="address1" value="Location.address1"/>
+       <property name="country" value="Location.country"/>
+       <property name="stateProvince" value="Location.stateProvince"/>
+       <property name="cityVillage" value="Location.cityVillage"/>
+     </nameMappings>
+     <sizeMappings class="properties">
+       <property name="postalCode" value="10"/>
+       <property name="address2" value="40"/>
+       <property name="address1" value="40"/>
+       <property name="country" value="10"/>
+       <property name="stateProvince" value="10"/>
+       <property name="cityVillage" value="10"/>
+     </sizeMappings>
+     <lineByLineFormat>
+       <string>address1</string>
+       <string>address2</string>
+       <string>cityVillage stateProvince country postalCode</string>
+     </lineByLineFormat>
+   </org.openmrs.layout.address.AddressTemplate>, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,418| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,520| In method UserService.saveUser. Arguments: User=clerk, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,541| Exiting method saveUser
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,569| In method UserService.saveUser. Arguments: User=nurse, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,581| Exiting method saveUser
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,609| In method UserService.saveUser. Arguments: User=doctor, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,622| Exiting method saveUser
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,656| In method UserService.saveUser. Arguments: User=sysadmin, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,667| Exiting method saveUser
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,770| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=7fba1e5,uuid=4da187c6-c436-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,773| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,785| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=c8813f7e,uuid=5ab6d8a8-c436-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,787| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,797| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=eb3d3d44,uuid=7dd9ac8e-c436-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,799| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,810| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=ce2c34c4,uuid=7e7d3e26-c436-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,812| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,824| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=b4b49efa,uuid=7efeaa60-c436-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,826| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,838| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=abc150ca,uuid=95636ce6-c436-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,840| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,852| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=b519c52f,uuid=9ebdc232-c436-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,854| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,865| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=b21fd75e,uuid=a62a40e0-c436-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,868| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,879| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=f6a1c0a2,uuid=ac71c996-c436-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,882| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,892| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=44b3d280,uuid=b29be856-c436-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,894| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,904| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=da393751,uuid=cba5a260-c436-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,906| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,916| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=e86393c9,uuid=d248c6c4-c436-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,918| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,931| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=ea148419,uuid=0c617770-c437-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,933| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,945| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=81627d4b,uuid=136ed9a4-c437-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,947| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,958| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=fd2cb9c5,uuid=1b2d98c4-c437-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,960| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,971| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=cb138210,uuid=25873c9e-c437-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,973| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,984| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=20d32feb,uuid=2febe6a8-c437-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,986| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:12,997| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=479f1d6a,uuid=38081afa-c437-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:12,999| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:13,008| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=65d684ad,uuid=3f5a8ca2-c437-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:13,010| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:13,021| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=33718375,uuid=452c596c-c437-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:13,023| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:13,035| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=9e3b268b,uuid=4d3b6396-c437-11e4-a470-82b0ea87e2d8], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:13,037| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:13,048| In method AppointmentService.saveAppointmentType. Arguments: AppointmentType=AppointmentType[hashCode=5dd5e553,uuid=4d85dda4-c437-11e4-a470-82b0ea87e2d8e], 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:13,050| Exiting method saveAppointmentType
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:13,402| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.identifierSourceId value: 1, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:13,406| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:13,531| In method DefinitionService.saveDefinition. Arguments: Definition=appointmentschedulingui.appointmentDataSetDefinition.dailyAppointments, 
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:13,535| In method SerializedDefinitionService.saveDefinition. Arguments: Definition=appointmentschedulingui.appointmentDataSetDefinition.dailyAppointments, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:13,550| Exiting method saveDefinition
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:13,550| Exiting method saveDefinition
+WARN - RequestHandlers.initHandlersFromConfig(163) |2018-11-26 11:33:15,116| Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+WARN - ManagedResource.reloadFromStorage(182) |2018-11-26 11:33:15,319| No stored data found for /rest/managed
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:15,561| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.patientNameSearch value: registrationcore.ExistingPatientNameSearch, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:15,576| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:15,658| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: emr.concept.diagnosisSetOfSets value: 160167AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:15,667| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:15,678| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: namephonetics.givenNameStringEncoder value: Soundex, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:15,690| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:15,702| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: namephonetics.middleNameStringEncoder value: Soundex, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:15,712| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:15,724| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: namephonetics.familyNameStringEncoder value: Soundex, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:15,734| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:15,745| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: namephonetics.familyName2StringEncoder value: Soundex, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:15,754| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:15,765| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.patientNameSearch value: registrationcore.BasicPatientNameSearch, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:15,780| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:15,793| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.fastSimilarPatientSearchAlgorithm value: registrationcore.BasicSimilarPatientSearchAlgorithm, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:15,803| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:15,815| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: registrationcore.preciseSimilarPatientSearchAlgorithm value: registrationcore.BasicExactPatientSearchAlgorithm, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:15,828| Exiting method saveGlobalProperty
+INFO - LoggingAdvice.invoke(115) |2018-11-26 11:33:15,841| In method AdministrationService.saveGlobalProperty. Arguments: GlobalProperty=property: conceptmanagementapps.snomedCtConceptSource value: 1ADDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD, 
+INFO - LoggingAdvice.invoke(155) |2018-11-26 11:33:15,850| Exiting method saveGlobalProperty
+ERROR - CommonsLoggingOutput.error(75) |2018-11-26 11:33:16,942| Line=381 The content of element type "dwr" must match "(init?,allow?,signatures?)".
+ERROR - CommonsLoggingOutput.error(75) |2018-11-26 11:33:16,946| Parameter mismatch parsing signatures section in dwr.xml on line: DWRAtlasService.disableAtlasModule()
+ERROR - CommonsLoggingOutput.error(75) |2018-11-26 11:33:16,948| Parameter mismatch parsing signatures section in dwr.xml on line: DWRHtmlFormEntryService.checkIfLoggedIn()
+WARN - OpenmrsUtil.getRuntimePropertiesFilePathName(2085) |2018-11-26 11:33:16,991| Unable to find a runtime properties file at /Users/zpolic/0_GitHub/openmrs-core/webapp/openmrs-runtime.properties
+WARN - OpenmrsUtil.getRuntimePropertiesFilePathName(2085) |2018-11-26 11:33:17,098| Unable to find a runtime properties file at /Users/zpolic/0_GitHub/openmrs-core/webapp/openmrs-runtime.properties
+[INFO] Started o.e.j.m.p.JettyWebAppContext@56da7487{/openmrs,file:///Users/zpolic/0_GitHub/openmrs-core/webapp/src/main/webapp/,AVAILABLE}{file:///Users/zpolic/0_GitHub/openmrs-core/webapp/src/main/webapp/}
+[INFO] Started ServerConnector@15e8e884{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] Started @228766ms
+[INFO] Started Jetty Server
+[INFO] Using Non-Native Java sun.nio.fs.PollingWatchService
+[WARNING] Quiet Time is too low for non-native WatchService [sun.nio.fs.PollingWatchService]: 1000 < 5000 ms (defaulting to 5000 ms)
+[INFO] Initializing Spring FrameworkServlet 'openmrs'
+[INFO] Stopped ServerConnector@15e8e884{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+[INFO] Destroying Spring FrameworkServlet 'openmrs'
+ERROR - SessionImpl.afterTransactionCompletion(537) |2018-11-26 11:35:15,816| HHH000087: Exception in interceptor afterTransactionCompletion()
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Peer (vm://localhost#1) disposed.
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:316)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:469)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at org.openmrs.event.EventEngine.doFireEvent(EventEngine.java:102)
+	at org.openmrs.event.EventEngine.fireEvent(EventEngine.java:81)
+	at org.openmrs.event.EventEngine.fireAction(EventEngine.java:67)
+	at org.openmrs.event.Event.fireAction(Event.java:38)
+	at org.openmrs.event.api.db.hibernate.HibernateEventInterceptor.afterTransactionCompletion(HibernateEventInterceptor.java:195)
+	at org.openmrs.api.db.hibernate.ChainingInterceptor.afterTransactionCompletion(ChainingInterceptor.java:211)
+	at org.hibernate.internal.SessionImpl.afterTransactionCompletion(SessionImpl.java:534)
+	at org.hibernate.engine.transaction.internal.TransactionCoordinatorImpl.afterTransaction(TransactionCoordinatorImpl.java:150)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.afterTransactionCompletion(JdbcTransaction.java:138)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:182)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doCommit(HibernateTransactionManager.java:584)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:757)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:726)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:515)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:291)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy225.onShutdown(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.cache.interceptor.CacheInterceptor$1.invoke(CacheInterceptor.java:52)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:303)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.openmrs.aop.LoggingAdvice.invoke(LoggingAdvice.java:121)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy226.onShutdown(Unknown Source)
+	at org.openmrs.scheduler.SchedulerUtil.shutdown(SchedulerUtil.java:78)
+	at org.openmrs.api.context.Context.shutdown(Context.java:883)
+	at org.openmrs.web.Listener.contextDestroyed(Listener.java:556)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextDestroyed(ContextHandler.java:843)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextDestroyed(ServletContextHandler.java:543)
+	at org.eclipse.jetty.server.handler.ContextHandler.stopContext(ContextHandler.java:824)
+	at org.eclipse.jetty.servlet.ServletContextHandler.stopContext(ServletContextHandler.java:353)
+	at org.eclipse.jetty.webapp.WebAppContext.stopWebapp(WebAppContext.java:1374)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.stopWebapp(JettyWebAppContext.java:332)
+	at org.eclipse.jetty.webapp.WebAppContext.stopContext(WebAppContext.java:1343)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:870)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStop(ServletContextHandler.java:269)
+	at org.eclipse.jetty.webapp.WebAppContext.doStop(WebAppContext.java:535)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStop(JettyWebAppContext.java:429)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:476)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.thread.ShutdownThread.run(ShutdownThread.java:138)
+Caused by: javax.jms.JMSException: Peer (vm://localhost#1) disposed.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:62)
+	at org.apache.activemq.ActiveMQConnection.doAsyncSendPacket(ActiveMQConnection.java:1259)
+	at org.apache.activemq.ActiveMQConnection.asyncSendPacket(ActiveMQConnection.java:1251)
+	at org.apache.activemq.ActiveMQSession.<init>(ActiveMQSession.java:250)
+	at org.apache.activemq.ActiveMQConnection.createSession(ActiveMQConnection.java:318)
+	at sun.reflect.GeneratedMethodAccessor499.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.jms.connection.SingleConnectionFactory$SharedConnectionInvocationHandler.invoke(SingleConnectionFactory.java:550)
+	at com.sun.proxy.$Proxy328.createSession(Unknown Source)
+	at org.springframework.jms.support.JmsAccessor.createSession(JmsAccessor.java:196)
+	at org.springframework.jms.core.JmsTemplate.access$1(JmsTemplate.java:1)
+	at org.springframework.jms.core.JmsTemplate$JmsTemplateResourceFactory.createSession(JmsTemplate.java:1035)
+	at org.springframework.jms.connection.ConnectionFactoryUtils.doGetTransactionalSession(ConnectionFactoryUtils.java:300)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:453)
+	... 68 more
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://localhost#1) disposed.
+	at org.apache.activemq.transport.vm.VMTransport.oneway(VMTransport.java:90)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:40)
+	at org.apache.activemq.transport.ResponseCorrelator.oneway(ResponseCorrelator.java:60)
+	at org.apache.activemq.ActiveMQConnection.doAsyncSendPacket(ActiveMQConnection.java:1257)
+	... 81 more
+WARN - ModuleFactory.stopModule(1098) |2018-11-26 11:35:15,843| Unable to call module's Activator.willStop() method
+org.openmrs.api.APIAuthenticationException: Privileges required: Manage Atlas Data
+	at org.openmrs.aop.AuthorizationAdvice.throwUnauthorized(AuthorizationAdvice.java:116)
+	at org.openmrs.aop.AuthorizationAdvice.before(AuthorizationAdvice.java:97)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:51)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy276.disableAtlasModule(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy276.disableAtlasModule(Unknown Source)
+	at org.openmrs.module.atlas.AtlasModuleActivator.willStop(AtlasModuleActivator.java:68)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1094)
+	at org.openmrs.module.ModuleUtil.shutdown(ModuleUtil.java:162)
+	at org.openmrs.api.context.Context.shutdown(Context.java:891)
+	at org.openmrs.web.Listener.contextDestroyed(Listener.java:556)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextDestroyed(ContextHandler.java:843)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextDestroyed(ServletContextHandler.java:543)
+	at org.eclipse.jetty.server.handler.ContextHandler.stopContext(ContextHandler.java:824)
+	at org.eclipse.jetty.servlet.ServletContextHandler.stopContext(ServletContextHandler.java:353)
+	at org.eclipse.jetty.webapp.WebAppContext.stopWebapp(WebAppContext.java:1374)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.stopWebapp(JettyWebAppContext.java:332)
+	at org.eclipse.jetty.webapp.WebAppContext.stopContext(WebAppContext.java:1343)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:870)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStop(ServletContextHandler.java:269)
+	at org.eclipse.jetty.webapp.WebAppContext.doStop(WebAppContext.java:535)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStop(JettyWebAppContext.java:429)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:476)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.thread.ShutdownThread.run(ShutdownThread.java:138)
+ERROR - SessionImpl.afterTransactionCompletion(537) |2018-11-26 11:35:15,993| HHH000087: Exception in interceptor afterTransactionCompletion()
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Peer (vm://localhost#1) disposed.
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:316)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:469)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at org.openmrs.event.EventEngine.doFireEvent(EventEngine.java:102)
+	at org.openmrs.event.EventEngine.fireEvent(EventEngine.java:81)
+	at org.openmrs.event.EventEngine.fireAction(EventEngine.java:67)
+	at org.openmrs.event.Event.fireAction(Event.java:38)
+	at org.openmrs.event.api.db.hibernate.HibernateEventInterceptor.afterTransactionCompletion(HibernateEventInterceptor.java:195)
+	at org.openmrs.api.db.hibernate.ChainingInterceptor.afterTransactionCompletion(ChainingInterceptor.java:211)
+	at org.hibernate.internal.SessionImpl.afterTransactionCompletion(SessionImpl.java:534)
+	at org.hibernate.engine.transaction.internal.TransactionCoordinatorImpl.afterTransaction(TransactionCoordinatorImpl.java:150)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.afterTransactionCompletion(JdbcTransaction.java:138)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:182)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doCommit(HibernateTransactionManager.java:584)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:757)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:726)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:515)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:291)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:653)
+	at org.openmrs.module.appframework.repository.AllComponentsState$$EnhancerBySpringCGLIB$$f533a24b.setComponentState(<generated>)
+	at org.openmrs.module.appframework.service.AppFrameworkServiceImpl.enableApp(AppFrameworkServiceImpl.java:260)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:201)
+	at com.sun.proxy.$Proxy171.enableApp(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.cache.interceptor.CacheInterceptor$1.invoke(CacheInterceptor.java:52)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:303)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.openmrs.aop.LoggingAdvice.invoke(LoggingAdvice.java:121)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy172.enableApp(Unknown Source)
+	at org.openmrs.module.referenceapplication.ReferenceApplicationActivator.stopped(ReferenceApplicationActivator.java:275)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1196)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1122)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1122)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1122)
+	at org.openmrs.module.ModuleUtil.shutdown(ModuleUtil.java:162)
+	at org.openmrs.api.context.Context.shutdown(Context.java:891)
+	at org.openmrs.web.Listener.contextDestroyed(Listener.java:556)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextDestroyed(ContextHandler.java:843)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextDestroyed(ServletContextHandler.java:543)
+	at org.eclipse.jetty.server.handler.ContextHandler.stopContext(ContextHandler.java:824)
+	at org.eclipse.jetty.servlet.ServletContextHandler.stopContext(ServletContextHandler.java:353)
+	at org.eclipse.jetty.webapp.WebAppContext.stopWebapp(WebAppContext.java:1374)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.stopWebapp(JettyWebAppContext.java:332)
+	at org.eclipse.jetty.webapp.WebAppContext.stopContext(WebAppContext.java:1343)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:870)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStop(ServletContextHandler.java:269)
+	at org.eclipse.jetty.webapp.WebAppContext.doStop(WebAppContext.java:535)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStop(JettyWebAppContext.java:429)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:476)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.thread.ShutdownThread.run(ShutdownThread.java:138)
+Caused by: javax.jms.JMSException: Peer (vm://localhost#1) disposed.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:62)
+	at org.apache.activemq.ActiveMQConnection.doAsyncSendPacket(ActiveMQConnection.java:1259)
+	at org.apache.activemq.ActiveMQConnection.asyncSendPacket(ActiveMQConnection.java:1251)
+	at org.apache.activemq.ActiveMQSession.<init>(ActiveMQSession.java:250)
+	at org.apache.activemq.ActiveMQConnection.createSession(ActiveMQConnection.java:318)
+	at sun.reflect.GeneratedMethodAccessor499.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.jms.connection.SingleConnectionFactory$SharedConnectionInvocationHandler.invoke(SingleConnectionFactory.java:550)
+	at com.sun.proxy.$Proxy328.createSession(Unknown Source)
+	at org.springframework.jms.support.JmsAccessor.createSession(JmsAccessor.java:196)
+	at org.springframework.jms.core.JmsTemplate.access$1(JmsTemplate.java:1)
+	at org.springframework.jms.core.JmsTemplate$JmsTemplateResourceFactory.createSession(JmsTemplate.java:1035)
+	at org.springframework.jms.connection.ConnectionFactoryUtils.doGetTransactionalSession(ConnectionFactoryUtils.java:300)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:453)
+	... 81 more
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://localhost#1) disposed.
+	at org.apache.activemq.transport.vm.VMTransport.oneway(VMTransport.java:90)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:40)
+	at org.apache.activemq.transport.ResponseCorrelator.oneway(ResponseCorrelator.java:60)
+	at org.apache.activemq.ActiveMQConnection.doAsyncSendPacket(ActiveMQConnection.java:1257)
+	... 94 more
+WARN - DynamicPooledDataSourceManagerMBean.getAttribute(373) |2018-11-26 11:35:16,086| Failed to get requested attribute: coreHashCode
+javax.management.AttributeNotFoundException: coreHashCode
+	at com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean.getAttribute(DynamicPooledDataSourceManagerMBean.java:353)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:647)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678)
+	at javax.management.AttributeValueExp.getAttribute(AttributeValueExp.java:163)
+	at javax.management.AttributeValueExp.apply(AttributeValueExp.java:105)
+	at javax.management.BinaryRelQueryExp.apply(BinaryRelQueryExp.java:109)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.objectNamesFromFilteredNamedObjects(DefaultMBeanServerInterceptor.java:1521)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.queryNamesImpl(DefaultMBeanServerInterceptor.java:564)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.queryNames(DefaultMBeanServerInterceptor.java:554)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.queryNames(JmxMBeanServer.java:619)
+	at org.apache.solr.core.JmxMonitoredMap.clear(JmxMonitoredMap.java:116)
+	at org.apache.solr.core.SolrCore.close(SolrCore.java:1111)
+	at org.apache.solr.core.SolrCores.close(SolrCores.java:117)
+	at org.apache.solr.core.CoreContainer.shutdown(CoreContainer.java:347)
+	at org.apache.solr.client.solrj.embedded.EmbeddedSolrServer.shutdown(EmbeddedSolrServer.java:249)
+	at org.openmrs.module.chartsearch.solr.SolrManagement.shutdown(SolrManagement.java:33)
+	at org.openmrs.module.chartsearch.ChartSearchActivator.stopped(ChartSearchActivator.java:72)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1196)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1122)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1122)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1122)
+	at org.openmrs.module.ModuleUtil.shutdown(ModuleUtil.java:162)
+	at org.openmrs.api.context.Context.shutdown(Context.java:891)
+	at org.openmrs.web.Listener.contextDestroyed(Listener.java:556)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextDestroyed(ContextHandler.java:843)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextDestroyed(ServletContextHandler.java:543)
+	at org.eclipse.jetty.server.handler.ContextHandler.stopContext(ContextHandler.java:824)
+	at org.eclipse.jetty.servlet.ServletContextHandler.stopContext(ServletContextHandler.java:353)
+	at org.eclipse.jetty.webapp.WebAppContext.stopWebapp(WebAppContext.java:1374)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.stopWebapp(JettyWebAppContext.java:332)
+	at org.eclipse.jetty.webapp.WebAppContext.stopContext(WebAppContext.java:1343)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:870)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStop(ServletContextHandler.java:269)
+	at org.eclipse.jetty.webapp.WebAppContext.doStop(WebAppContext.java:535)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStop(JettyWebAppContext.java:429)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:476)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.thread.ShutdownThread.run(ShutdownThread.java:138)
+WARN - DynamicPooledDataSourceManagerMBean.getAttribute(373) |2018-11-26 11:35:16,089| Failed to get requested attribute: coreHashCode
+javax.management.AttributeNotFoundException: coreHashCode
+	at com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean.getAttribute(DynamicPooledDataSourceManagerMBean.java:353)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.getAttribute(DefaultMBeanServerInterceptor.java:647)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.getAttribute(JmxMBeanServer.java:678)
+	at javax.management.AttributeValueExp.getAttribute(AttributeValueExp.java:163)
+	at javax.management.AttributeValueExp.apply(AttributeValueExp.java:105)
+	at javax.management.BinaryRelQueryExp.apply(BinaryRelQueryExp.java:109)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.objectNamesFromFilteredNamedObjects(DefaultMBeanServerInterceptor.java:1521)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.queryNamesImpl(DefaultMBeanServerInterceptor.java:564)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.queryNames(DefaultMBeanServerInterceptor.java:554)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.queryNames(JmxMBeanServer.java:619)
+	at org.apache.solr.core.JmxMonitoredMap.clear(JmxMonitoredMap.java:116)
+	at org.apache.solr.core.SolrCore.close(SolrCore.java:1111)
+	at org.apache.solr.core.SolrCores.close(SolrCores.java:117)
+	at org.apache.solr.core.CoreContainer.shutdown(CoreContainer.java:347)
+	at org.apache.solr.client.solrj.embedded.EmbeddedSolrServer.shutdown(EmbeddedSolrServer.java:249)
+	at org.openmrs.module.chartsearch.solr.SolrManagement.shutdown(SolrManagement.java:33)
+	at org.openmrs.module.chartsearch.ChartSearchActivator.stopped(ChartSearchActivator.java:72)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1196)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1122)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1122)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1122)
+	at org.openmrs.module.ModuleUtil.shutdown(ModuleUtil.java:162)
+	at org.openmrs.api.context.Context.shutdown(Context.java:891)
+	at org.openmrs.web.Listener.contextDestroyed(Listener.java:556)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextDestroyed(ContextHandler.java:843)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextDestroyed(ServletContextHandler.java:543)
+	at org.eclipse.jetty.server.handler.ContextHandler.stopContext(ContextHandler.java:824)
+	at org.eclipse.jetty.servlet.ServletContextHandler.stopContext(ServletContextHandler.java:353)
+	at org.eclipse.jetty.webapp.WebAppContext.stopWebapp(WebAppContext.java:1374)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.stopWebapp(JettyWebAppContext.java:332)
+	at org.eclipse.jetty.webapp.WebAppContext.stopContext(WebAppContext.java:1343)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:870)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStop(ServletContextHandler.java:269)
+	at org.eclipse.jetty.webapp.WebAppContext.doStop(WebAppContext.java:535)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStop(JettyWebAppContext.java:429)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:476)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.thread.ShutdownThread.run(ShutdownThread.java:138)
+WARN - ModuleFactory.stopModule(1200) |2018-11-26 11:35:16,542| Unable to call module's Activator.shutdown() method
+org.openmrs.api.APIAuthenticationException: Basic authentication required
+	at org.openmrs.aop.AuthorizationAdvice.throwUnauthorized(AuthorizationAdvice.java:145)
+	at org.openmrs.aop.AuthorizationAdvice.before(AuthorizationAdvice.java:101)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:51)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy245.getDefinitionByUuid(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy245.getDefinitionByUuid(Unknown Source)
+	at org.openmrs.module.reporting.definition.persister.SerializedDefinitionPersister.getDefinitionByUuid(SerializedDefinitionPersister.java:61)
+	at org.openmrs.module.reporting.definition.service.BaseDefinitionService.getDefinitionByUuid(BaseDefinitionService.java:92)
+	at org.openmrs.module.reporting.definition.service.BaseDefinitionService.getDefinition(BaseDefinitionService.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.cache.interceptor.CacheInterceptor$1.invoke(CacheInterceptor.java:52)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:303)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.openmrs.aop.LoggingAdvice.invoke(LoggingAdvice.java:121)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy140.getDefinition(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy261.getDefinition(Unknown Source)
+	at org.openmrs.module.appointmentschedulingui.AppointmentSchedulingUIActivator.removeDataSetDefinitions(AppointmentSchedulingUIActivator.java:108)
+	at org.openmrs.module.appointmentschedulingui.AppointmentSchedulingUIActivator.stopped(AppointmentSchedulingUIActivator.java:95)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1196)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1122)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1122)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1122)
+	at org.openmrs.module.ModuleUtil.shutdown(ModuleUtil.java:162)
+	at org.openmrs.api.context.Context.shutdown(Context.java:891)
+	at org.openmrs.web.Listener.contextDestroyed(Listener.java:556)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextDestroyed(ContextHandler.java:843)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextDestroyed(ServletContextHandler.java:543)
+	at org.eclipse.jetty.server.handler.ContextHandler.stopContext(ContextHandler.java:824)
+	at org.eclipse.jetty.servlet.ServletContextHandler.stopContext(ServletContextHandler.java:353)
+	at org.eclipse.jetty.webapp.WebAppContext.stopWebapp(WebAppContext.java:1374)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.stopWebapp(JettyWebAppContext.java:332)
+	at org.eclipse.jetty.webapp.WebAppContext.stopContext(WebAppContext.java:1343)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:870)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStop(ServletContextHandler.java:269)
+	at org.eclipse.jetty.webapp.WebAppContext.doStop(WebAppContext.java:535)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStop(JettyWebAppContext.java:429)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:476)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.thread.ShutdownThread.run(ShutdownThread.java:138)
+ERROR - EventEngine.unsubscribe(339) |2018-11-26 11:35:16,740| Failed to unsubscribe from the specified destination:
+javax.jms.JMSException: Peer (vm://localhost#1) disposed.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:62)
+	at org.apache.activemq.ActiveMQConnection.doAsyncSendPacket(ActiveMQConnection.java:1259)
+	at org.apache.activemq.ActiveMQConnection.asyncSendPacket(ActiveMQConnection.java:1251)
+	at org.apache.activemq.ActiveMQSession.asyncSendPacket(ActiveMQSession.java:1863)
+	at org.apache.activemq.ActiveMQMessageConsumer.doClose(ActiveMQMessageConsumer.java:664)
+	at org.apache.activemq.ActiveMQMessageConsumer.close(ActiveMQMessageConsumer.java:652)
+	at org.openmrs.event.EventEngine.unsubscribe(EventEngine.java:334)
+	at org.openmrs.event.EventEngine.unsubscribe(EventEngine.java:232)
+	at org.openmrs.event.Event.unsubscribe(Event.java:102)
+	at org.openmrs.module.emrapi.EmrApiActivator.stopped(EmrApiActivator.java:365)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1196)
+	at org.openmrs.module.ModuleFactory.stopModule(ModuleFactory.java:1122)
+	at org.openmrs.module.ModuleUtil.shutdown(ModuleUtil.java:162)
+	at org.openmrs.api.context.Context.shutdown(Context.java:891)
+	at org.openmrs.web.Listener.contextDestroyed(Listener.java:556)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextDestroyed(ContextHandler.java:843)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextDestroyed(ServletContextHandler.java:543)
+	at org.eclipse.jetty.server.handler.ContextHandler.stopContext(ContextHandler.java:824)
+	at org.eclipse.jetty.servlet.ServletContextHandler.stopContext(ServletContextHandler.java:353)
+	at org.eclipse.jetty.webapp.WebAppContext.stopWebapp(WebAppContext.java:1374)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.stopWebapp(JettyWebAppContext.java:332)
+	at org.eclipse.jetty.webapp.WebAppContext.stopContext(WebAppContext.java:1343)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:870)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStop(ServletContextHandler.java:269)
+	at org.eclipse.jetty.webapp.WebAppContext.doStop(WebAppContext.java:535)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStop(JettyWebAppContext.java:429)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:143)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:161)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:476)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.thread.ShutdownThread.run(ShutdownThread.java:138)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://localhost#1) disposed.
+	at org.apache.activemq.transport.vm.VMTransport.oneway(VMTransport.java:90)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:40)
+	at org.apache.activemq.transport.ResponseCorrelator.oneway(ResponseCorrelator.java:60)
+	at org.apache.activemq.ActiveMQConnection.doAsyncSendPacket(ActiveMQConnection.java:1257)
+	... 39 more
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,789| QUERY: from LocationTag where uuid = :uuid
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,789| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,789| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,789| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,789| Execution Count : 4
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,790| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,790| Row Count       : 4
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,790| QUERY: [CRITERIA] select this_.metadata_term_mapping_id as metadata1_85_0_, this_.metadata_source_id as metadata2_85_0_, this_.code as code3_85_0_, this_.metadata_class as metadata4_85_0_, this_.metadata_uuid as metadata5_85_0_, this_.name as name6_85_0_, this_.description as descript7_85_0_, this_.creator as creator8_85_0_, this_.date_created as date_cre9_85_0_, this_.changed_by as changed10_85_0_, this_.date_changed as date_ch11_85_0_, this_.retired as retired12_85_0_, this_.date_retired as date_re13_85_0_, this_.retired_by as retired14_85_0_, this_.retire_reason as retire_15_85_0_, this_.uuid as uuid16_85_0_ from metadatamapping_metadata_term_mapping this_ where this_.metadata_source_id=? and this_.code=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,790| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,790| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,790| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,790| Execution Count : 23
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,790| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,791| Row Count       : 23
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,791| QUERY: [CRITERIA] select this_.order_id as order_id1_99_0_, this_1_.uuid as uuid2_99_0_, this_1_.instructions as instruct3_99_0_, this_1_.date_activated as date_act4_99_0_, this_1_.auto_expire_date as auto_exp5_99_0_, this_1_.date_stopped as date_sto6_99_0_, this_1_.accession_number as accessio7_99_0_, this_1_.date_created as date_cre8_99_0_, this_1_.voided as voided9_99_0_, this_1_.date_voided as date_vo10_99_0_, this_1_.void_reason as void_re11_99_0_, this_1_.order_reason_non_coded as order_r12_99_0_, this_1_.order_number as order_n13_99_0_, this_1_.comment_to_fulfiller as comment14_99_0_, this_1_.scheduled_date as schedul15_99_0_, this_1_.sort_weight as sort_we16_99_0_, this_1_.urgency as urgency17_99_0_, this_1_.order_action as order_a18_99_0_, this_1_.care_setting as care_se19_99_0_, this_1_.order_type_id as order_t20_99_0_, this_1_.order_group_id as order_g21_99_0_, this_1_.previous_order_id as previou22_99_0_, this_1_.concept_id as concept23_99_0_, this_1_.encounter_id as encount24_99_0_, this_1_.patient_id as patient25_99_0_, this_1_.order_reason as order_r26_99_0_, this_1_.orderer as orderer27_99_0_, this_1_.voided_by as voided_28_99_0_, this_1_.creator as creator29_99_0_, this_.dose as dose2_51_0_, this_.dose_units as dose_uni3_51_0_, this_.frequency as frequenc4_51_0_, this_.as_needed as as_neede5_51_0_, this_.as_needed_condition as as_neede6_51_0_, this_.quantity as quantity7_51_0_, this_.quantity_units as quantity8_51_0_, this_.drug_inventory_id as drug_inv9_51_0_, this_.dosing_type as dosing_10_51_0_, this_.num_refills as num_ref11_51_0_, this_.dosing_instructions as dosing_12_51_0_, this_.duration as duratio13_51_0_, this_.duration_units as duratio14_51_0_, this_.route as route15_51_0_, this_.brand_name as brand_n16_51_0_, this_.dispense_as_written as dispens17_51_0_, this_.drug_non_coded as drug_no18_51_0_ from drug_order this_ inner join orders this_1_ on this_.order_id=this_1_.order_id where this_.frequency=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,791| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,791| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,791| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,791| Execution Count : 30
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,791| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,791| Row Count       : 0
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,791| QUERY: from Role r order by r.role
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,792| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,792| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,792| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,792| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,792| Average time    : 11
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,792| Row Count       : 30
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,792| QUERY: [CRITERIA] select this_.property as property1_63_0_, this_.property_value as property2_63_0_, this_.description as descript3_63_0_, this_.datatype as datatype4_63_0_, this_.datatype_config as datatype5_63_0_, this_.preferred_handler as preferre6_63_0_, this_.handler_config as handler_7_63_0_, this_.uuid as uuid8_63_0_, this_.changed_by as changed_9_63_0_, this_.date_changed as date_ch10_63_0_ from global_property this_ where lower(this_.property)=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,792| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,792| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,793| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,793| Execution Count : 106
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,793| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,793| Row Count       : 88
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,793| QUERY: from AppointmentType at where at.uuid = :uuid
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,793| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,793| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,793| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,793| Execution Count : 22
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,793| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,794| Row Count       : 22
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,794| QUERY: [CRITERIA] select this_.id as id1_68_0_, this_.form_id as form_id2_68_0_, this_.xml_data as xml_data3_68_0_, this_.creator as creator4_68_0_, this_.date_created as date_cre5_68_0_, this_.changed_by as changed_6_68_0_, this_.date_changed as date_cha7_68_0_, this_.retired as retired8_68_0_, this_.name as name9_68_0_, this_.uuid as uuid10_68_0_, this_.description as descrip11_68_0_, this_.retired_by as retired12_68_0_, this_.date_retired as date_re13_68_0_, this_.retire_reason as retire_14_68_0_ from htmlformentry_html_form this_ where this_.form_id=? order by this_.date_created desc
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,794| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,794| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,794| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,794| Execution Count : 5
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,794| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,794| Row Count       : 5
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,795| QUERY: [CRITERIA] select this_.calculation_registration_id as calculat1_14_0_, this_.uuid as uuid2_14_0_, this_.token as token3_14_0_, this_.provider_class_name as provider4_14_0_, this_.calculation_name as calculat5_14_0_, this_.configuration as configur6_14_0_ from calculation_registration this_ where this_.provider_class_name=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,795| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,795| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,795| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,795| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,795| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,795| Row Count       : 0
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,795| QUERY: [CRITERIA] select this_.id as id1_71_0_, this_.uuid as uuid2_71_0_, this_.name as name3_71_0_, this_.description as descript4_71_0_, this_.identifier_type as identifi5_71_0_, this_.creator as creator6_71_0_, this_.date_created as date_cre7_71_0_, this_.changed_by as changed_8_71_0_, this_.date_changed as date_cha9_71_0_, this_.retired as retired10_71_0_, this_.retired_by as retired11_71_0_, this_.date_retired as date_re12_71_0_, this_.retire_reason as retire_13_71_0_, this_1_.next_sequence_value as next_seq2_76_0_, this_1_.base_character_set as base_cha3_76_0_, this_1_.first_identifier_base as first_id4_76_0_, this_1_.prefix as prefix5_76_0_, this_1_.suffix as suffix6_76_0_, this_1_.min_length as min_leng7_76_0_, this_1_.max_length as max_leng8_76_0_, this_2_.url as url2_74_0_, this_2_.user as user3_74_0_, this_2_.password as password4_74_0_, this_3_.source as source2_70_0_, this_3_.batch_size as batch_si3_70_0_, this_3_.min_pool_size as min_pool4_70_0_, this_3_.refill_with_scheduled_task as refill_w5_70_0_, this_3_.sequential as sequenti6_70_0_, case when this_1_.id is not null then 1 when this_2_.id is not null then 2 when this_3_.id is not null then 3 when this_.id is not null then 0 end as clazz_0_ from idgen_identifier_source this_ left outer join idgen_seq_id_gen this_1_ on this_.id=this_1_.id left outer join idgen_remote_source this_2_ on this_.id=this_2_.id left outer join idgen_id_pool this_3_ on this_.id=this_3_.id where this_.uuid=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,795| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,796| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,796| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,796| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,796| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,796| Row Count       : 1
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,796| QUERY: from User u where u.retired = '0' and (u.username = ? or u.systemId = ?)
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,796| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,796| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,796| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,796| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,796| Average time    : 3
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,797| Row Count       : 1
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,797| QUERY: [CRITERIA] select count(*) as y0_ from address_hierarchy_entry this_
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,797| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,797| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,797| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,797| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,797| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,797| Row Count       : 1
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,797| QUERY: [CRITERIA] select this_.metadata_term_mapping_id as metadata1_85_1_, this_.metadata_source_id as metadata2_85_1_, this_.code as code3_85_1_, this_.metadata_class as metadata4_85_1_, this_.metadata_uuid as metadata5_85_1_, this_.name as name6_85_1_, this_.description as descript7_85_1_, this_.creator as creator8_85_1_, this_.date_created as date_cre9_85_1_, this_.changed_by as changed10_85_1_, this_.date_changed as date_ch11_85_1_, this_.retired as retired12_85_1_, this_.date_retired as date_re13_85_1_, this_.retired_by as retired14_85_1_, this_.retire_reason as retire_15_85_1_, this_.uuid as uuid16_85_1_, metadataso1_.metadata_source_id as metadata1_84_0_, metadataso1_.name as name2_84_0_, metadataso1_.description as descript3_84_0_, metadataso1_.creator as creator4_84_0_, metadataso1_.date_created as date_cre5_84_0_, metadataso1_.changed_by as changed_6_84_0_, metadataso1_.date_changed as date_cha7_84_0_, metadataso1_.retired as retired8_84_0_, metadataso1_.date_retired as date_ret9_84_0_, metadataso1_.retired_by as retired10_84_0_, metadataso1_.retire_reason as retire_11_84_0_, metadataso1_.uuid as uuid12_84_0_ from metadatamapping_metadata_term_mapping this_ inner join metadatamapping_metadata_source metadataso1_ on this_.metadata_source_id=metadataso1_.metadata_source_id where this_.retired=? and this_.code=? and metadataso1_.name=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,798| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,798| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,798| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,798| Execution Count : 3
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,798| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,798| Row Count       : 3
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,798| QUERY: [CRITERIA] select this_.imported_package_id as imported1_88_0_, this_.uuid as uuid2_88_0_, this_.group_uuid as group_uu3_88_0_, this_.date_created as date_cre4_88_0_, this_.date_imported as date_imp5_88_0_, this_.subscription_url as subscrip6_88_0_, this_.subscription_status as subscrip7_88_0_, this_.name as name8_88_0_, this_.description as descript9_88_0_, this_.import_config as import_10_88_0_, this_.remote_version as remote_11_88_0_, this_.version as version12_88_0_ from metadatasharing_imported_package this_ where this_.group_uuid=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,798| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,798| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,799| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,799| Execution Count : 8
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,799| Average time    : 4
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,799| Row Count       : 8
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,799| QUERY: [CRITERIA] select this_.metadata_source_id as metadata1_84_0_, this_.name as name2_84_0_, this_.description as descript3_84_0_, this_.creator as creator4_84_0_, this_.date_created as date_cre5_84_0_, this_.changed_by as changed_6_84_0_, this_.date_changed as date_cha7_84_0_, this_.retired as retired8_84_0_, this_.date_retired as date_ret9_84_0_, this_.retired_by as retired10_84_0_, this_.retire_reason as retire_11_84_0_, this_.uuid as uuid12_84_0_ from metadatamapping_metadata_source this_ where this_.name=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,799| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,799| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,799| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,799| Execution Count : 4
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,799| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,800| Row Count       : 4
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,800| QUERY: [CRITERIA] select this_.encounter_type_id as encounte1_56_0_, this_.name as name2_56_0_, this_.description as descript3_56_0_, this_.date_created as date_cre4_56_0_, this_.creator as creator5_56_0_, this_.edit_privilege as edit_pri6_56_0_, this_.view_privilege as view_pri7_56_0_, this_.uuid as uuid8_56_0_, this_.retired_by as retired_9_56_0_, this_.date_retired as date_re10_56_0_, this_.retire_reason as retire_11_56_0_, this_.retired as retired12_56_0_, this_.changed_by as changed13_56_0_, this_.date_changed as date_ch14_56_0_ from encounter_type this_ where this_.uuid=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,800| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,800| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,800| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,800| Execution Count : 9
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,800| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,800| Row Count       : 9
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,800| QUERY: [CRITERIA] select this_.provider_role_id as provider1_118_0_, this_.uuid as uuid2_118_0_, this_.name as name3_118_0_, this_.description as descript4_118_0_, this_.creator as creator5_118_0_, this_.date_created as date_cre6_118_0_, this_.changed_by as changed_7_118_0_, this_.date_changed as date_cha8_118_0_, this_.retired as retired9_118_0_, this_.retired_by as retired10_118_0_, this_.date_retired as date_re11_118_0_, this_.retire_reason as retire_12_118_0_ from providermanagement_provider_role this_ where this_.uuid=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,801| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,801| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,801| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,801| Execution Count : 3
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,801| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,801| Row Count       : 3
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,801| QUERY: [CRITERIA] select this_.patient_identifier_type_id as patient_1_102_0_, this_.uuid as uuid2_102_0_, this_.name as name3_102_0_, this_.description as descript4_102_0_, this_.format as format5_102_0_, this_.format_description as format_d6_102_0_, this_.required as required7_102_0_, this_.validator as validato8_102_0_, this_.date_created as date_cre9_102_0_, this_.location_behavior as locatio10_102_0_, this_.uniqueness_behavior as uniquen11_102_0_, this_.creator as creator12_102_0_, this_.retired_by as retired13_102_0_, this_.date_retired as date_re14_102_0_, this_.retire_reason as retire_15_102_0_, this_.retired as retired16_102_0_, this_.changed_by as changed17_102_0_, this_.date_changed as date_ch18_102_0_ from patient_identifier_type this_ where this_.uuid=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,801| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,801| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,801| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,801| Execution Count : 3
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,802| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,802| Row Count       : 3
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,802| QUERY: from HL7InQueue as hiq where hiq.messageState = ? order by HL7InQueueId
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,802| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,802| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,802| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,802| Execution Count : 26
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,802| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,802| Row Count       : 0
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,802| QUERY: [CRITERIA] select this_.provider_id as provider1_115_0_, this_.person_id as person_i2_115_0_, this_.name as name3_115_0_, this_.identifier as identifi4_115_0_, this_.creator as creator5_115_0_, this_.date_created as date_cre6_115_0_, this_.changed_by as changed_7_115_0_, this_.date_changed as date_cha8_115_0_, this_.retired_by as retired_9_115_0_, this_.date_retired as date_re10_115_0_, this_.retire_reason as retire_11_115_0_, this_.retired as retired12_115_0_, this_.uuid as uuid13_115_0_, this_.provider_role_id as provide14_115_0_ from provider this_ where this_.provider_id is not null and this_.person_id=? and this_.retired=? order by this_.provider_id asc
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,803| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,803| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,803| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,803| Execution Count : 3
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,803| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,803| Row Count       : 3
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,803| QUERY: [CRITERIA] select this_.location_id as location1_77_0_, this_.uuid as uuid2_77_0_, this_.name as name3_77_0_, this_.description as descript4_77_0_, this_.address1 as address5_77_0_, this_.address2 as address6_77_0_, this_.city_village as city_vil7_77_0_, this_.state_province as state_pr8_77_0_, this_.country as country9_77_0_, this_.postal_code as postal_10_77_0_, this_.latitude as latitud11_77_0_, this_.longitude as longitu12_77_0_, this_.county_district as county_13_77_0_, this_.address3 as address14_77_0_, this_.address4 as address15_77_0_, this_.address6 as address16_77_0_, this_.address5 as address17_77_0_, this_.address7 as address18_77_0_, this_.address8 as address19_77_0_, this_.address9 as address20_77_0_, this_.address10 as address21_77_0_, this_.address11 as address22_77_0_, this_.address12 as address23_77_0_, this_.address13 as address24_77_0_, this_.address14 as address25_77_0_, this_.address15 as address26_77_0_, this_.date_created as date_cr27_77_0_, this_.date_changed as date_ch28_77_0_, this_.parent_location as parent_29_77_0_, this_.changed_by as changed30_77_0_, this_.creator as creator31_77_0_, this_.retired_by as retired32_77_0_, this_.date_retired as date_re33_77_0_, this_.retire_reason as retire_34_77_0_, this_.retired as retired35_77_0_ from location this_ where this_.retired=? order by this_.name asc
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,803| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,803| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,804| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,804| Execution Count : 5
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,804| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,804| Row Count       : 40
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,804| QUERY: [CRITERIA] select this_.order_id as order_id1_99_0_, this_1_.uuid as uuid2_99_0_, this_1_.instructions as instruct3_99_0_, this_1_.date_activated as date_act4_99_0_, this_1_.auto_expire_date as auto_exp5_99_0_, this_1_.date_stopped as date_sto6_99_0_, this_1_.accession_number as accessio7_99_0_, this_1_.date_created as date_cre8_99_0_, this_1_.voided as voided9_99_0_, this_1_.date_voided as date_vo10_99_0_, this_1_.void_reason as void_re11_99_0_, this_1_.order_reason_non_coded as order_r12_99_0_, this_1_.order_number as order_n13_99_0_, this_1_.comment_to_fulfiller as comment14_99_0_, this_1_.scheduled_date as schedul15_99_0_, this_1_.sort_weight as sort_we16_99_0_, this_1_.urgency as urgency17_99_0_, this_1_.order_action as order_a18_99_0_, this_1_.care_setting as care_se19_99_0_, this_1_.order_type_id as order_t20_99_0_, this_1_.order_group_id as order_g21_99_0_, this_1_.previous_order_id as previou22_99_0_, this_1_.concept_id as concept23_99_0_, this_1_.encounter_id as encount24_99_0_, this_1_.patient_id as patient25_99_0_, this_1_.order_reason as order_r26_99_0_, this_1_.orderer as orderer27_99_0_, this_1_.voided_by as voided_28_99_0_, this_1_.creator as creator29_99_0_, this_.specimen_source as specimen2_138_0_, this_.laterality as laterali3_138_0_, this_.clinical_history as clinical4_138_0_, this_.number_of_repeats as number_o5_138_0_, this_.frequency as frequenc6_138_0_ from test_order this_ inner join orders this_1_ on this_.order_id=this_1_.order_id where this_.frequency=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,804| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,804| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,804| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,804| Execution Count : 30
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,805| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,805| Row Count       : 0
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,805| QUERY: from Form f where f.uuid = :uuid
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,805| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,805| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,805| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,805| Execution Count : 5
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,805| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,805| Row Count       : 5
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,805| QUERY: from PersonAttributeType pat where pat.uuid = :uuid
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,805| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,806| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,806| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,806| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,806| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,806| Row Count       : 1
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,806| QUERY: [CRITERIA] select this_.app_id as app_id1_6_0_, this_.json as json2_6_0_ from appframework_user_app this_
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,806| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,806| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,806| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,806| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,806| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,807| Row Count       : 0
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,807| QUERY: from VisitType vt where vt.uuid = :uuid
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,807| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,807| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,807| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,807| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,807| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,807| Row Count       : 1
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,807| QUERY: [CRITERIA] select this_.appointment_type_id as appointm1_11_0_, this_.name as name2_11_0_, this_.description as descript3_11_0_, this_.duration as duration4_11_0_, this_.confidential as confiden5_11_0_, this_.uuid as uuid6_11_0_, this_.date_created as date_cre7_11_0_, this_.date_changed as date_cha8_11_0_, this_.date_retired as date_ret9_11_0_, this_.retired as retired10_11_0_, this_.retire_reason as retire_11_11_0_, this_.creator as creator12_11_0_, this_.changed_by as changed13_11_0_, this_.retired_by as retired14_11_0_ from appointmentscheduling_appointment_type this_ where lower(this_.name)=? and this_.retired=? and not (this_.uuid=?)
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,807| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,807| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,808| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,808| Execution Count : 44
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,808| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,808| Row Count       : 0
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,808| QUERY: from OrderFrequency o where o.uuid = :uuid
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,808| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,808| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,808| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,808| Execution Count : 30
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,808| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,808| Row Count       : 30
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,809| QUERY: [CRITERIA] select this_.order_frequency_id as order_fr1_93_0_, this_.concept_id as concept_2_93_0_, this_.frequency_per_day as frequenc3_93_0_, this_.creator as creator4_93_0_, this_.date_created as date_cre5_93_0_, this_.retired as retired6_93_0_, this_.retired_by as retired_7_93_0_, this_.date_retired as date_ret8_93_0_, this_.retire_reason as retire_r9_93_0_, this_.uuid as uuid10_93_0_, this_.changed_by as changed11_93_0_, this_.date_changed as date_ch12_93_0_ from order_frequency this_ where this_.concept_id=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,809| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,809| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,809| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,809| Execution Count : 30
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,809| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,809| Row Count       : 30
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,809| QUERY: [CRITERIA] select this_.provider_id as provider1_115_0_, this_.person_id as person_i2_115_0_, this_.name as name3_115_0_, this_.identifier as identifi4_115_0_, this_.creator as creator5_115_0_, this_.date_created as date_cre6_115_0_, this_.changed_by as changed_7_115_0_, this_.date_changed as date_cha8_115_0_, this_.retired_by as retired_9_115_0_, this_.date_retired as date_re10_115_0_, this_.retire_reason as retire_11_115_0_, this_.retired as retired12_115_0_, this_.uuid as uuid13_115_0_, this_.provider_role_id as provide14_115_0_ from provider this_ where this_.provider_id is not null and this_.person_id=? order by this_.provider_id asc
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,809| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,809| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,810| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,810| Execution Count : 3
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,810| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,810| Row Count       : 3
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,810| QUERY: [CRITERIA] select this_.serialized_object_id as serializ1_137_0_, this_.uuid as uuid2_137_0_, this_.name as name3_137_0_, this_.description as descript4_137_0_, this_.type as type5_137_0_, this_.subtype as subtype6_137_0_, this_.serialization_class as serializ7_137_0_, this_.serialized_data as serializ8_137_0_, this_.date_created as date_cre9_137_0_, this_.date_changed as date_ch10_137_0_, this_.retired as retired11_137_0_, this_.date_retired as date_re12_137_0_, this_.retire_reason as retire_13_137_0_, this_.creator as creator14_137_0_, this_.changed_by as changed15_137_0_, this_.retired_by as retired16_137_0_ from serialized_object this_ where (this_.type=? or this_.subtype=?)
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,810| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,810| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,810| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,810| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,810| Average time    : 9
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,810| Row Count       : 11
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,811| QUERY: [CRITERIA] select this_.component_state_id as componen1_5_0_, this_.uuid as uuid2_5_0_, this_.component_id as componen3_5_0_, this_.component_type as componen4_5_0_, this_.enabled as enabled5_5_0_ from appframework_component_state this_ where this_.component_id=? and this_.component_type=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,811| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,811| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,811| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,811| Execution Count : 34
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,811| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,811| Row Count       : 5
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,811| QUERY: [CRITERIA] select this_.task_config_id as task_con1_135_0_, this_.uuid as uuid2_135_0_, this_.name as name3_135_0_, this_.description as descript4_135_0_, this_.schedulable_class as schedula5_135_0_, this_.repeat_interval as repeat_i6_135_0_, this_.start_time as start_ti7_135_0_, this_.start_time_pattern as start_ti8_135_0_, this_.last_execution_time as last_exe9_135_0_, this_.start_on_startup as start_o10_135_0_, this_.started as started11_135_0_, this_.created_by as created12_135_0_, this_.changed_by as changed13_135_0_, this_.date_created as date_cr14_135_0_, this_.date_changed as date_ch15_135_0_ from scheduler_task_config this_
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,811| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,811| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,812| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,812| Execution Count : 3
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,812| Average time    : 4
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,812| Row Count       : 6
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,812| QUERY: select count(*) from User u where (u.username = :uname1 or u.systemId = :uname2 or u.username = :sysid1 or u.systemId = :sysid2 or u.systemId = :uname3) and u.userId <> :uid
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,812| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,812| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,812| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,812| Execution Count : 4
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,812| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,812| Row Count       : 4
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,813| QUERY: [CRITERIA] select this_.form_id as form_id1_60_0_, this_.uuid as uuid2_60_0_, this_.name as name3_60_0_, this_.version as version4_60_0_, this_.build as build5_60_0_, this_.published as publishe6_60_0_, this_.description as descript7_60_0_, this_.encounter_type as encounte8_60_0_, this_.creator as creator9_60_0_, this_.date_created as date_cr10_60_0_, this_.changed_by as changed11_60_0_, this_.date_changed as date_ch12_60_0_, this_.retired as retired13_60_0_, this_.retired_by as retired14_60_0_, this_.date_retired as date_re15_60_0_, this_.retired_reason as retired16_60_0_ from form this_ order by this_.name asc, this_.form_id asc
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,813| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,813| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,813| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,813| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,813| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,813| Row Count       : 5
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,813| QUERY: [CRITERIA] select this_.provider_id as provider1_115_0_, this_.person_id as person_i2_115_0_, this_.name as name3_115_0_, this_.identifier as identifi4_115_0_, this_.creator as creator5_115_0_, this_.date_created as date_cre6_115_0_, this_.changed_by as changed_7_115_0_, this_.date_changed as date_cha8_115_0_, this_.retired_by as retired_9_115_0_, this_.date_retired as date_re10_115_0_, this_.retire_reason as retire_11_115_0_, this_.retired as retired12_115_0_, this_.uuid as uuid13_115_0_, this_.provider_role_id as provide14_115_0_ from provider this_ where this_.uuid=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,813| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,814| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,814| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,814| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,814| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,814| Row Count       : 1
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,814| QUERY: [CRITERIA] select this_.location_tag_id as location1_80_0_, this_.name as name2_80_0_, this_.description as descript3_80_0_, this_.date_created as date_cre4_80_0_, this_.creator as creator5_80_0_, this_.retired_by as retired_6_80_0_, this_.date_retired as date_ret7_80_0_, this_.retire_reason as retire_r8_80_0_, this_.retired as retired9_80_0_, this_.uuid as uuid10_80_0_, this_.date_changed as date_ch11_80_0_, this_.changed_by as changed12_80_0_ from location_tag this_ where this_.name=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,814| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,814| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,814| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,814| Execution Count : 2
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,814| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,815| Row Count       : 2
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,815| QUERY: [CRITERIA] select this_.serialized_object_id as serializ1_137_0_, this_.uuid as uuid2_137_0_, this_.name as name3_137_0_, this_.description as descript4_137_0_, this_.type as type5_137_0_, this_.subtype as subtype6_137_0_, this_.serialization_class as serializ7_137_0_, this_.serialized_data as serializ8_137_0_, this_.date_created as date_cre9_137_0_, this_.date_changed as date_ch10_137_0_, this_.retired as retired11_137_0_, this_.date_retired as date_re12_137_0_, this_.retire_reason as retire_13_137_0_, this_.creator as creator14_137_0_, this_.changed_by as changed15_137_0_, this_.retired_by as retired16_137_0_ from serialized_object this_ where this_.uuid=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,815| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,815| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,815| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,815| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,815| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,815| Row Count       : 1
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,815| QUERY: [CRITERIA] select this_.id as id1_131_0_, this_.uuid as uuid2_131_0_, this_.base_cohort_uuid as base_coh3_131_0_, this_.base_cohort_parameters as base_coh4_131_0_, this_.report_definition_uuid as report_d5_131_0_, this_.report_definition_parameters as report_d6_131_0_, this_.renderer_type as renderer7_131_0_, this_.renderer_argument as renderer8_131_0_, this_.requested_by as requeste9_131_0_, this_.request_datetime as request10_131_0_, this_.priority as priorit11_131_0_, this_.status as status12_131_0_, this_.schedule as schedul13_131_0_, this_.process_automatically as process14_131_0_, this_.evaluation_start_datetime as evaluat15_131_0_, this_.evaluation_complete_datetime as evaluat16_131_0_, this_.render_complete_datetime as render_17_131_0_, this_.minimum_days_to_preserve as minimum18_131_0_, this_.description as descrip19_131_0_ from reporting_report_request this_ where this_.status in (?) order by this_.evaluation_complete_datetime desc, this_.evaluation_start_datetime desc, this_.priority desc, this_.request_datetime desc
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,815| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,816| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,816| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,816| Execution Count : 4
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,816| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,816| Row Count       : 0
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,816| QUERY: [CRITERIA] select this_.id as id1_69_0_, this_.identifier_type as identifi2_69_0_, this_.location as location3_69_0_, this_.source as source4_69_0_, this_.manual_entry_enabled as manual_e5_69_0_, this_.automatic_generation_enabled as automati6_69_0_ from idgen_auto_generation_option this_ where this_.identifier_type=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,816| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,816| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,816| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,817| Execution Count : 2
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,817| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,817| Row Count       : 2
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,817| QUERY: from PatientIdentifierType pit where pit.uuid = :uuid
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,817| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,817| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,817| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,817| Execution Count : 2
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,817| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,817| Row Count       : 2
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,817| QUERY: [CRITERIA] select this_.concept_source_id as concept_1_42_0_, this_.uuid as uuid2_42_0_, this_.name as name3_42_0_, this_.description as descript4_42_0_, this_.hl7_code as hl5_42_0_, this_.unique_id as unique_i6_42_0_, this_.date_created as date_cre7_42_0_, this_.retired as retired8_42_0_, this_.date_retired as date_ret9_42_0_, this_.retire_reason as retire_10_42_0_, this_.creator as creator11_42_0_, this_.retired_by as retired12_42_0_, this_.changed_by as changed13_42_0_, this_.date_changed as date_ch14_42_0_ from concept_reference_source this_ where this_.name=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,818| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,818| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,818| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,818| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,818| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,818| Row Count       : 1
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,818| QUERY: from Privilege p order by p.privilege
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,818| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,818| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,818| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,819| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,819| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,819| Row Count       : 295
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,819| QUERY: from Person p where p.uuid = :uuid
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,819| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,819| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,819| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,819| Execution Count : 4
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,819| Average time    : 4
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,819| Row Count       : 4
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,819| QUERY: [CRITERIA] select this_.person_attribute_type_id as person_a1_108_0_, this_.uuid as uuid2_108_0_, this_.name as name3_108_0_, this_.description as descript4_108_0_, this_.format as format5_108_0_, this_.foreign_key as foreign_6_108_0_, this_.sort_weight as sort_wei7_108_0_, this_.searchable as searchab8_108_0_, this_.creator as creator9_108_0_, this_.date_created as date_cr10_108_0_, this_.changed_by as changed11_108_0_, this_.date_changed as date_ch12_108_0_, this_.retired_by as retired13_108_0_, this_.date_retired as date_re14_108_0_, this_.retire_reason as retire_15_108_0_, this_.retired as retired16_108_0_, this_.edit_privilege as edit_pr17_108_0_ from person_attribute_type this_ where this_.name=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,820| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,820| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,820| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,820| Execution Count : 2
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,820| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,820| Row Count       : 2
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,820| QUERY: [CRITERIA] select this_.provider_id as provider1_115_0_, this_.person_id as person_i2_115_0_, this_.name as name3_115_0_, this_.identifier as identifi4_115_0_, this_.creator as creator5_115_0_, this_.date_created as date_cre6_115_0_, this_.changed_by as changed_7_115_0_, this_.date_changed as date_cha8_115_0_, this_.retired_by as retired_9_115_0_, this_.date_retired as date_re10_115_0_, this_.retire_reason as retire_11_115_0_, this_.retired as retired12_115_0_, this_.uuid as uuid13_115_0_, this_.provider_role_id as provide14_115_0_ from provider this_ where this_.person_id=? order by this_.retired asc, this_.provider_id asc
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,820| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,820| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,820| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,821| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,821| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,821| Row Count       : 1
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,821| QUERY: from User u where u.uuid = :uuid
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,821| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,821| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,821| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,821| Execution Count : 31
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,821| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,821| Row Count       : 31
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,821| QUERY: from Role r where r.uuid = :uuid
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,822| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,822| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,822| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,822| Execution Count : 1
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,822| Average time    : 1
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,822| Row Count       : 1
+INFO - HibernateContextDAO.showUsageStatistics(372) |2018-11-26 11:35:17,822| QUERY: [CRITERIA] select this_.form_resource_id as form_res1_62_0_, this_.form_id as form_id2_62_0_, this_.name as name3_62_0_, this_.value_reference as value_re4_62_0_, this_.datatype as datatype5_62_0_, this_.datatype_config as datatype6_62_0_, this_.preferred_handler as preferre7_62_0_, this_.handler_config as handler_8_62_0_, this_.uuid as uuid9_62_0_, this_.changed_by as changed10_62_0_, this_.date_changed as date_ch11_62_0_ from form_resource this_ where this_.form_id=?
+INFO - HibernateContextDAO.showUsageStatistics(374) |2018-11-26 11:35:17,822| Cache Hit Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(375) |2018-11-26 11:35:17,822| Cache Miss Count: 0
+INFO - HibernateContextDAO.showUsageStatistics(376) |2018-11-26 11:35:17,822| Cache Put Count : 0
+INFO - HibernateContextDAO.showUsageStatistics(377) |2018-11-26 11:35:17,823| Execution Count : 5
+INFO - HibernateContextDAO.showUsageStatistics(378) |2018-11-26 11:35:17,823| Average time    : 0
+INFO - HibernateContextDAO.showUsageStatistics(379) |2018-11-26 11:35:17,823| Row Count       : 0
+[INFO] Stopped o.e.j.m.p.JettyWebAppContext@56da7487{/openmrs,file:///Users/zpolic/0_GitHub/openmrs-core/webapp/src/main/webapp/,UNAVAILABLE}{file:///Users/zpolic/0_GitHub/openmrs-core/webapp/src/main/webapp/}
